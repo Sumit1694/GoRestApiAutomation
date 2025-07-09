@@ -1,0 +1,8 @@
+[2025-07-09 13:21:52] [INFO] UserTests - ********** Creating user   ***********
+[2025-07-09 13:21:58] [INFO] UserTests - ********** user is created  ***********
+[2025-07-09 13:22:00] [INFO] UserTests - ******* Reading user info *********
+[2025-07-09 13:22:01] [INFO] UserTests - ******* User info is displayed *********
+[2025-07-09 13:22:01] [INFO] UserTests - ******* Update user info *********
+[2025-07-09 13:22:01] [INFO] UserTests - ******* user info updated *********
+[2025-07-09 13:22:03] [INFO] UserTests - ********User deleting**********
+[2025-07-09 13:22:04] [INFO] UserTests - ********User is deleted**********

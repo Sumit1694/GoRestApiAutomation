@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="5">
+
+    <Properties>
+        <!-- Logs folder -->
+        <Property name="log-path">./logs</Property>
+        <!-- Timestamp for each run -->
+        <Property name="timestamp">${date:yyyy-MM-dd_HH-mm-ss}</Property>
+        <!-- Log file name -->
+        <Property name="log-file-name">RunLog-${timestamp}.log</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- Console Output -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%p] %c{1} - %m%n"/>
+        </Console>
+
+        <!-- Rolling file that creates 1 file per run -->
+        <File name="FileLogger" fileName="${log-path}/${log-file-name}">
+            <PatternLayout>
+                <Pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%p] %c{1} - %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="api" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </Root>
+    </Loggers>
+</Configuration>
