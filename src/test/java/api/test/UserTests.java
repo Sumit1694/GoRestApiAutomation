@@ -3,86 +3,64 @@ package api.test;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import com.github.javafaker.Faker;
 import api.endpoints.UserEndPoints;
-import api.payload.User;
 import io.restassured.response.Response;
 
-public class UserTests {
-
-	Faker faker;
-	User userPayload;
+public class UserTests extends baseTest {
 	
-	public Logger logger;
+	private Logger logger = LogManager.getLogger(UserTests.class);
 
-	@BeforeClass
-	public void setupData()
-	{
-		faker=new Faker();
-		userPayload=new User();
+    @Test(priority=1)
+    public void testPostUser() {
+        logger.info("********** Creating user   ***********");
 
-		userPayload.setName(faker.name().fullName());
-		userPayload.setGender("male"); // Must be "male" or "female"
-		userPayload.setEmail(faker.internet().safeEmailAddress());
-		userPayload.setStatus("active"); // Must be "active" or "inactive"
-	
-	    logger=LogManager.getLogger(this.getClass());
-	}
+        Response response = UserEndPoints.createUser(userPayload);
+        response.then().log().all();
 
-	@Test(priority=1)
-	public void testPostUser()
-	{	
-		
-		logger.info("********** Creating user   ***********");
-		Response response=UserEndPoints.createUser(userPayload);
-		response.then().log().all();
+        Assert.assertEquals(response.getStatusCode(), 201);
+        logger.info("********** user is created  ***********");
 
-		Assert.assertEquals(response.getStatusCode(), 201);
-		
-		logger.info("********** user is created  ***********");
+        // Save created user ID for next tests
+        int userId = response.jsonPath().getInt("id");
+        userPayload.setId(userId);
+        System.out.println("Created User ID: " + userId);
+    }
 
-		int userId=response.jsonPath().getInt("id");
-		userPayload.setId(userId);
-		System.out.println("Created User ID: " + userId);
-	}
+    @Test(priority=2, dependsOnMethods = {"testPostUser"})
+    public void testGetUserByName() {
+        logger.info("******* Reading user info *********");
 
-	@Test(priority=2)
-	public void testGetUserByName()
-	{
-		logger.info("******* Reading user info *********");
-		
-		Response response=UserEndPoints.readUser(this.userPayload.getId());
-		response.then().log().all();
-		Assert.assertEquals(response.getStatusCode(), 200);
-		
-		logger.info("******* User info is displayed *********");
-	}
+        Response response = UserEndPoints.readUser(baseTest.userPayload.getId());
+        response.then().log().all();
+        Assert.assertEquals(response.getStatusCode(), 200);
 
-	@Test(priority=3)
-	public void testUpdateUserByName()
-	{
-		logger.info("******* Update user info *********");
-		
-		userPayload.setName(faker.name().fullName());
-		userPayload.setGender("female"); 
-		userPayload.setEmail(faker.internet().safeEmailAddress());
-		userPayload.setStatus("inactive"); 
-		
-		logger.info("******* user info updated *********");
+        logger.info("******* User info is displayed *********");
+    }
 
-		Response response=UserEndPoints.updateUser(this.userPayload.getId(), userPayload);
-		response.then().log().all();
-		Assert.assertEquals(response.getStatusCode(), 200);
-	}
-	
-	@Test(priority=4)
-	public void testDeleteUser()
-	{
-		logger.info("********User deleting**********");
-		Response response=UserEndPoints.deleteUser(this.userPayload.getId());
-		Assert.assertEquals(response.getStatusCode(), 204);
-		logger.info("********User is deleted**********");
-	}
+    @Test(priority=3, dependsOnMethods = {"testPostUser"})
+    public void testUpdateUserByName() {
+        logger.info("******* Update user info *********");
+
+        userPayload.setName(faker.name().fullName());
+        userPayload.setEmail("updated" + System.currentTimeMillis() + "@mail.com");
+        userPayload.setGender("female");
+        userPayload.setStatus("inactive");
+
+        Response response = UserEndPoints.updateUser(baseTest.userPayload.getId(), userPayload);
+        response.then().log().all();
+        Assert.assertEquals(response.getStatusCode(), 200);
+
+        logger.info("******* User info updated *********");
+    }
+
+    @Test(priority=4, dependsOnMethods = {"testPostUser"})
+    public void testDeleteUser() {
+        logger.info("********User deleting**********");
+
+        Response response = UserEndPoints.deleteUser(baseTest.userPayload.getId());
+        Assert.assertEquals(response.getStatusCode(), 204);
+
+        logger.info("********User is deleted**********");
+    }
 }

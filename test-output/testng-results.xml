@@ -1,33 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-09T01:02:09 IST" name="Default suite" finished-at="2025-07-09T01:02:17 IST" duration-ms="8222">
+  <suite started-at="2025-07-10T19:12:33 IST" name="Suite" finished-at="2025-07-10T19:12:45 IST" duration-ms="12572">
     <groups>
     </groups>
-    <test started-at="2025-07-09T01:02:09 IST" name="Default test" finished-at="2025-07-09T01:02:17 IST" duration-ms="8222">
-      <class name="api.test.UserTests2">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.UserTests2@49d3c823]" started-at="2025-07-09T01:02:09 IST" name="setupData" finished-at="2025-07-09T01:02:09 IST" duration-ms="253" status="PASS">
+    <test started-at="2025-07-10T19:12:33 IST" name="Test" finished-at="2025-07-10T19:12:45 IST" duration-ms="12572">
+      <class name="api.test.UserUpdateTests">
+        <test-method signature="testUpdateUserNameAndStatus()[pri:1, instance:api.test.UserUpdateTests@13d73fa]" started-at="2025-07-10T19:12:42 IST" name="testUpdateUserNameAndStatus" finished-at="2025-07-10T19:12:42 IST" duration-ms="819" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupData -->
-        <test-method signature="testPostUser()[pri:1, instance:api.test.UserTests2@49d3c823]" started-at="2025-07-09T01:02:09 IST" name="testPostUser" finished-at="2025-07-09T01:02:13 IST" duration-ms="4142" status="PASS">
+        </test-method> <!-- testUpdateUserNameAndStatus -->
+        <test-method signature="testUpdateUserWithInvalidID()[pri:2, instance:api.test.UserUpdateTests@13d73fa]" started-at="2025-07-10T19:12:42 IST" name="testUpdateUserWithInvalidID" finished-at="2025-07-10T19:12:43 IST" duration-ms="738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserWithInvalidID -->
+      </class> <!-- api.test.UserUpdateTests -->
+      <class name="api.test.UserDeleteTests">
+        <test-method signature="testDeleteUserWithValidId()[pri:1, instance:api.test.UserDeleteTests@5023bb8b]" started-at="2025-07-10T19:12:43 IST" name="testDeleteUserWithValidId" finished-at="2025-07-10T19:12:44 IST" duration-ms="713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserWithValidId -->
+        <test-method signature="testDeleteAlreadyDeletedUser()[pri:2, instance:api.test.UserDeleteTests@5023bb8b]" started-at="2025-07-10T19:12:44 IST" name="testDeleteAlreadyDeletedUser" finished-at="2025-07-10T19:12:45 IST" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteAlreadyDeletedUser -->
+        <test-method signature="testDeleteUserWithInvalidId()[pri:3, instance:api.test.UserDeleteTests@5023bb8b]" started-at="2025-07-10T19:12:45 IST" name="testDeleteUserWithInvalidId" finished-at="2025-07-10T19:12:45 IST" duration-ms="695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserWithInvalidId -->
+      </class> <!-- api.test.UserDeleteTests -->
+      <class name="api.test.UserCreateTests">
+        <test-method is-config="true" signature="globalSetup()[pri:0, instance:api.test.UserCreateTests@6179e425]" started-at="2025-07-10T19:12:26 IST" name="globalSetup" finished-at="2025-07-10T19:12:33 IST" duration-ms="6646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalSetup -->
+        <test-method signature="testPostUser()[pri:1, instance:api.test.UserCreateTests@6179e425]" started-at="2025-07-10T19:12:33 IST" name="testPostUser" finished-at="2025-07-10T19:12:35 IST" duration-ms="1697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostUser -->
-        <test-method signature="testGetUserByName()[pri:2, instance:api.test.UserTests2@49d3c823]" started-at="2025-07-09T01:02:13 IST" name="testGetUserByName" finished-at="2025-07-09T01:02:14 IST" duration-ms="1215" status="PASS">
+        <test-method signature="testCreateUserWithDuplicateEmail()[pri:2, instance:api.test.UserCreateTests@6179e425]" started-at="2025-07-10T19:12:35 IST" name="testCreateUserWithDuplicateEmail" finished-at="2025-07-10T19:12:35 IST" duration-ms="818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserWithDuplicateEmail -->
+        <test-method signature="testCreateUserWithMissingFields()[pri:3, instance:api.test.UserCreateTests@6179e425]" started-at="2025-07-10T19:12:35 IST" name="testCreateUserWithMissingFields" finished-at="2025-07-10T19:12:36 IST" duration-ms="873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserWithMissingFields -->
+        <test-method signature="testCreateUserWithInvalidEmailFormat()[pri:4, instance:api.test.UserCreateTests@6179e425]" started-at="2025-07-10T19:12:36 IST" name="testCreateUserWithInvalidEmailFormat" finished-at="2025-07-10T19:12:37 IST" duration-ms="788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserWithInvalidEmailFormat -->
+        <test-method signature="testCreateUserWithoutAuthToken()[pri:5, instance:api.test.UserCreateTests@6179e425]" started-at="2025-07-10T19:12:37 IST" name="testCreateUserWithoutAuthToken" finished-at="2025-07-10T19:12:38 IST" duration-ms="1210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserWithoutAuthToken -->
+        <test-method signature="testCreateUserWithLongName()[pri:6, instance:api.test.UserCreateTests@6179e425]" started-at="2025-07-10T19:12:38 IST" name="testCreateUserWithLongName" finished-at="2025-07-10T19:12:39 IST" duration-ms="768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserWithLongName -->
+      </class> <!-- api.test.UserCreateTests -->
+      <class name="api.test.UserReadTests">
+        <test-method signature="testGetUserByName()[pri:1, instance:api.test.UserReadTests@6399551e]" started-at="2025-07-10T19:12:39 IST" name="testGetUserByName" finished-at="2025-07-10T19:12:40 IST" depends-on-methods="testPostUser" duration-ms="807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUserByName -->
-        <test-method signature="testUpdateUserByName()[pri:3, instance:api.test.UserTests2@49d3c823]" started-at="2025-07-09T01:02:14 IST" name="testUpdateUserByName" finished-at="2025-07-09T01:02:16 IST" duration-ms="1434" status="PASS">
+        <test-method signature="testGetUserWithInvalidId()[pri:2, instance:api.test.UserReadTests@6399551e]" started-at="2025-07-10T19:12:40 IST" name="testGetUserWithInvalidId" finished-at="2025-07-10T19:12:41 IST" duration-ms="742" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUpdateUserByName -->
-        <test-method signature="testDeleteUser()[pri:4, instance:api.test.UserTests2@49d3c823]" started-at="2025-07-09T01:02:16 IST" name="testDeleteUser" finished-at="2025-07-09T01:02:17 IST" duration-ms="1120" status="PASS">
+        </test-method> <!-- testGetUserWithInvalidId -->
+        <test-method signature="testGetUserWithInvalidIdFormat()[pri:3, instance:api.test.UserReadTests@6399551e]" started-at="2025-07-10T19:12:41 IST" name="testGetUserWithInvalidIdFormat" finished-at="2025-07-10T19:12:42 IST" duration-ms="1071" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDeleteUser -->
-      </class> <!-- api.test.UserTests2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testGetUserWithInvalidIdFormat -->
+      </class> <!-- api.test.UserReadTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

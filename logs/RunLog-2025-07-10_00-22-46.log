@@ -1,0 +1,70 @@
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 12 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-10 00:22:46] [INFO] Utils - [TestNG] Running:
+  C:\Users\Sumit\AppData\Local\Temp\testng-eclipse--528935753\testng-customsuite.xml
+
+[2025-07-10 00:22:46] [INFO] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
+[2025-07-10 00:22:47] [INFO] UserPostTests - ===== Test Setup Complete =====
+[2025-07-10 00:22:47] [INFO] UserPostTests - ********** Creating user with valid details  ***********
+[2025-07-10 00:22:49] [INFO] UserPostTests - ********** user is created  ***********
+[2025-07-10 00:22:50] [INFO] UserPostTests - ********** Creating user with duplicate email ***********
+[2025-07-10 00:22:52] [INFO] UserPostTests - ********** Duplicate email creation test passed ***********
+[2025-07-10 00:22:52] [INFO] UserPostTests - ********** Creating user with missing fields ***********
+[2025-07-10 00:22:53] [INFO] UserPostTests - ********** Missing field creation test passed ***********
+[2025-07-10 00:22:53] [INFO] UserPostTests - ********** Creating user with invalid email ***********
+[2025-07-10 00:22:55] [INFO] UserPostTests - ********** Missing field creation test passed ***********
+[2025-07-10 00:22:55] [INFO] UserPostTests - ********** Attempting to create user without auth token ***********
+[2025-07-10 00:22:55] [INFO] UserPostTests - ********** Authorization check without token passed ***********
+[2025-07-10 00:22:55] [INFO] UserPostTests - ******* Reading user info *********
+[2025-07-10 00:22:56] [INFO] UserPostTests - ******* User info is displayed *********
+[2025-07-10 00:22:56] [INFO] UserPostTests - ********** Trying to get user with invalid/non-existent ID ***********
+[2025-07-10 00:22:57] [INFO] UserPostTests - ********** Non-existent user fetch test passed ***********
+[2025-07-10 00:22:57] [INFO] UserPostTests - ********** Trying to get user with invalid ID format ***********
+[2025-07-10 00:22:58] [INFO] UserPostTests - ********** Invalid ID format fetch test passed ***********
+[2025-07-10 00:22:58] [INFO] UserPostTests - ********** Updating user name and status ***********
+[2025-07-10 00:22:58] [INFO] UserPostTests - ********** User name and status update test passed ***********
+[2025-07-10 00:22:58] [INFO] UserPostTests - ********** Trying to update user with invalid ID ***********
+[2025-07-10 00:22:59] [INFO] UserPostTests - ********** Update user with invalid ID test passed ***********
+[2025-07-10 00:22:59] [INFO] UserPostTests - ********** Deleting user with valid ID ***********
+[2025-07-10 00:23:00] [INFO] UserPostTests - ********** User deleted successfully ***********
+[2025-07-10 00:23:00] [INFO] UserPostTests - ********** Trying to delete an already deleted user ***********
+[2025-07-10 00:23:00] [INFO] UserPostTests - ********** Delete already deleted user test passed ***********
+[2025-07-10 00:23:00] [INFO] UserPostTests - ********** Trying to delete user with invalid ID ***********
+[2025-07-10 00:23:01] [INFO] UserPostTests - ********** Delete user with invalid ID test passed ***********
+[2025-07-10 00:23:01] [INFO] UserPostTests - ********** Creating user with a very long name (>255 chars) ***********
+[2025-07-10 00:23:02] [INFO] UserPostTests - ********** Long name validation test passed ***********
+[2025-07-10 00:23:02] [INFO] UserPostTests - ********** Trying to update a user’s email to one that already exists ***********
+[2025-07-10 00:23:04] [INFO] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@7c0a6f62: 121 ms
+[2025-07-10 00:23:04] [INFO] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@703eead0: 19 ms
+[2025-07-10 00:23:04] [INFO] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@25e24908: 12 ms
+[2025-07-10 00:23:04] [INFO] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@a08e41b: 10 ms
+[2025-07-10 00:23:04] [INFO] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@32f54c2a: 9 ms
+[2025-07-10 00:23:04] [INFO] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@4603c412: 0 ms

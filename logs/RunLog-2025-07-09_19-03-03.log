@@ -1,0 +1,12 @@
+[2025-07-09 19:03:03] [INFO] Utils - [TestNG] Running:
+  C:\Users\Sumit\eclipse-workspace\ReqresAPIAutomation\testng.xml
+
+[2025-07-09 19:03:04] [INFO] UserTests - ===== Test Setup Complete =====
+[2025-07-09 19:03:04] [INFO] UserTests - ********** Creating user   ***********
+[2025-07-09 19:03:07] [INFO] UserTests - ********** user is created  ***********
+[2025-07-09 19:03:08] [INFO] UserTests - ******* Reading user info *********
+[2025-07-09 19:03:09] [INFO] UserTests - ******* User info is displayed *********
+[2025-07-09 19:03:09] [INFO] UserTests - ******* Update user info *********
+[2025-07-09 19:03:10] [INFO] UserTests - ******* User info updated *********
+[2025-07-09 19:03:10] [INFO] UserTests - ********User deleting**********
+[2025-07-09 19:03:11] [INFO] UserTests - ********User is deleted**********

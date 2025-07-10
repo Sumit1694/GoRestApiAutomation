@@ -1,0 +1,26 @@
+[2025-07-10 18:58:47] [INFO] Utils - [TestNG] Running:
+  C:\Users\Sumit\eclipse-workspace\ReqresAPIAutomation\testng.xml
+
+[2025-07-10 18:58:48] [INFO] UserCreateTests - ********** Creating user with valid details  ***********
+[2025-07-10 18:58:53] [INFO] UserCreateTests - ********** user is created  ***********
+[2025-07-10 18:58:54] [INFO] UserCreateTests - ********** Creating user with duplicate email ***********
+[2025-07-10 18:58:56] [INFO] UserCreateTests - ********** Duplicate email creation test passed ***********
+[2025-07-10 18:58:56] [INFO] UserCreateTests - ********** Creating user with missing fields ***********
+[2025-07-10 18:58:57] [INFO] UserCreateTests - ********** Missing field creation test passed ***********
+[2025-07-10 18:58:57] [INFO] UserCreateTests - ********** Creating user with invalid email ***********
+[2025-07-10 18:58:58] [INFO] UserCreateTests - ********** Missing field creation test passed ***********
+[2025-07-10 18:58:58] [INFO] UserCreateTests - ********** Attempting to create user without auth token ***********
+[2025-07-10 18:59:00] [INFO] UserCreateTests - ********** Authorization check without token passed ***********
+[2025-07-10 18:59:00] [INFO] UserCreateTests - ********** Creating user with a very long name (>255 chars) ***********
+[2025-07-10 18:59:01] [INFO] UserCreateTests - ********** Long name validation test passed ***********
+[2025-07-10 18:59:01] [INFO] UserReadTests - ******* Reading user info *********
+[2025-07-10 18:59:02] [INFO] UserReadTests - ********** Trying to get user with invalid/non-existent ID ***********
+[2025-07-10 18:59:04] [INFO] UserReadTests - ********** Non-existent user fetch test passed ***********
+[2025-07-10 18:59:04] [INFO] UserReadTests - ********** Trying to get user with invalid ID format ***********
+[2025-07-10 18:59:05] [INFO] UserReadTests - ********** Invalid ID format fetch test passed ***********
+[2025-07-10 18:59:05] [INFO] UserUpdateTests - ********** Updating user name and status ***********
+[2025-07-10 18:59:06] [INFO] UserUpdateTests - ********** Trying to update user with invalid ID ***********
+[2025-07-10 18:59:07] [INFO] UserUpdateTests - ********** Update user with invalid ID test passed ***********
+[2025-07-10 18:59:07] [INFO] UserDeleteTests - ********** Deleting user with valid ID ***********
+[2025-07-10 18:59:09] [INFO] UserDeleteTests - ********** Trying to delete user with invalid ID ***********
+[2025-07-10 18:59:10] [INFO] UserDeleteTests - ********** Delete user with invalid ID test passed ***********

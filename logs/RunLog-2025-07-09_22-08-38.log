@@ -1,0 +1,45 @@
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 50 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 13 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[2025-07-09 22:08:39] [INFO] Utils - [TestNG] Running:
+  C:\Users\Sumit\AppData\Local\Temp\testng-eclipse--754073438\testng-customsuite.xml
+
+[2025-07-09 22:08:39] [INFO] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 8 ms.
+[2025-07-09 22:08:39] [INFO] UserPostTests - ===== Test Setup Complete =====
+[2025-07-09 22:08:39] [INFO] UserPostTests - ********** Creating user with valid details  ***********
+[2025-07-09 22:08:45] [INFO] UserPostTests - ********** user is created  ***********
+[2025-07-09 22:08:46] [INFO] UserPostTests - ********** Creating user with duplicate email ***********
+[2025-07-09 22:08:48] [INFO] UserPostTests - ********** Duplicate email creation test passed ***********
+[2025-07-09 22:08:48] [INFO] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@ba86c53: 83 ms
+[2025-07-09 22:08:48] [INFO] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@3df6494f: 1 ms
+[2025-07-09 22:08:48] [INFO] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@3ae91ab3: 10 ms
+[2025-07-09 22:08:48] [INFO] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@28a3fc34: 7 ms
+[2025-07-09 22:08:48] [INFO] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@3180aee: 7 ms
+[2025-07-09 22:08:48] [INFO] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@5d94ac8a: 0 ms
